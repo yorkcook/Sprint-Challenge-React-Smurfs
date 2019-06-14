@@ -31,9 +31,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavLink to="/">Smurfs</NavLink>
-        <NavLink to="/smurf-form">Smurf Form</NavLink>
-
+        <div>
+          <NavLink to="/">Smurfs</NavLink>
+          <NavLink to="/smurf-form">Smurf Form</NavLink>
+        </div>
         <Route path="/smurf-form" component={SmurfForm} />
         <Route
           exact

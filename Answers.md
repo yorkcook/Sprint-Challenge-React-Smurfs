@@ -12,9 +12,13 @@ Client-side routing is generally faster because the whole page isn't being refre
     <!-- Create, Retreive, Update, and Delete -->
 
 1.  Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
     <!-- Create = Post
     Read = Get
     Update = Put
     Delete = Delete -->
 
-1)  Mention three tools we can use to make AJAX requests
+1.  Mention three tools we can use to make AJAX requests
+    <!-- .then
+    .catch
+    .get -->
