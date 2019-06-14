@@ -9,23 +9,16 @@ class SmurfForm extends Component {
       age: "",
       height: ""
     };
-  }
-
-  componentDidMount() {
-    axios
-      .get("http://localhost:3333/smurfs")
-      .then(res => {
-        this.setState({ smurfs: res.data });
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    console.log(this.props);
   }
 
   addSmurf = event => {
     event.preventDefault();
     // add code to create the smurf using the api
-
+    axios
+      .post("http://localhost:3333/smurfs", this.state)
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
     this.setState({
       name: "",
       age: "",
